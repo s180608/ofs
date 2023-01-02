@@ -1,0 +1,111 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	background-image: url(1.jpg);
+}
+
+
+.form-box
+{
+    width:380px;
+	height:410px;
+	position:relative;
+	margin:2% auto;
+	background:rgba(255, 255, 255, 0.3);
+	padding:10px;
+	border-radius: 30px;
+    box-shadow: 10px 8px 35px #000000;
+    top: 100px;
+}
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #F3C693;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid rgb(17, 17, 17);
+	outline:none;
+	background: transparent;
+	color: white;
+}
+.submit-btn
+{
+	width: 50%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #ff9d6c;
+	border: 0;
+	outline: none;
+	border-radius: 10px;
+}
+
+#register
+{
+	left:49px;
+}
+#register input
+{
+	color:rgb(37, 37, 37);
+	font-size: 15;
+}
+
+.reg{
+	position: absolute;
+	margin-top: -80px;
+	left: 83px;
+}
+
+.submit-btn:hover{
+	background-color: rgb(235, 157, 255);
+}

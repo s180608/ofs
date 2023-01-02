@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Online Food Ordering System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="./styles.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+.interface {
+  font-family: montserrat;
+  background-color: linen;
+}
+nav {
+  position: fixed;
+  background: linen;
+  height: 80px;
+  width: 100%;
+  z-index: 1000;
+}
+label.logo {
+  color: black;
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  margin-left: -100px;
+}
+label.chef {
+  size: auto;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+  z-index: 1000;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+section {
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+.chef {
+  height: 59px;
+  width: 50px;
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+.head {
+  display: grid;
+  margin-top: 210px;
+}
+.online {
+  margin-left: 50px;
+  font-size: 70px;
+  color: rgb(255, 145, 0);
+  font-family: "poppins";
+  margin-top: -110px;
+}
+
+.food {
+  margin-left: 300px;
+  margin-top: -140px;
+  font-size: 59px;
+  font-family: "Lobster", cursive;
+}
+.ordering {
+  margin-left: 290px;
+  margin-top: -80px;
+  font-size: 55px;
+  font-family: "Asap", sans-serif;
+}
+.system {
+  margin-left: 290px;
+  margin-top: -25px;
+  font-size: 55px;
+  font-family: "Asap", sans-serif;
+}
+
+.tagline {
+  margin-top: 30px;
+  margin-left: 56px;
+  font-size: 25px;
+}
+
+.order {
+  width: 100px;
+  margin-left: 250px;
+  margin-top: -10px;
+}
+
+.order {
+  width: 188px;
+  height: 70px;
+  border-radius: 50px;
+  color: white;
+  background-color: black;
+  font-size: large;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.image {
+  margin-left: 680px;
+  margin-top: -450px;
+  border-radius: 25px;
+}
+
+.rating {
+  width: 30px;
+  height: 30px;
+  margin-left: 130px;
+  margin-top: -130px;
+}
+.star1 {
+  width: 30px;
+  height: 30px;
+  margin-left: 160px;
+  margin-top: -130px;
+}
+.star2 {
+  width: 30px;
+  height: 30px;
+  margin-left: 190px;
+  margin-top: -130px;
+}
+
+.star3 {
+    width: 30px;
+    height: 30px;
+    margin-left: 220px;
+    margin-top: -130px;
+  }
+
+  .rating1{
+    margin-left: 130px;
+    margin-top: -90px;
+  }
+
+  .based{
+    margin-left: 130px;
+    margin-top: -50px;
+  }
+
+
+.track{
+  background-color: bisque;
+}
+
+.iframe{
+  margin-top: 120px;
+  border-radius: 30px;
+  margin-left: 100px;
+  margin-top: 70px;
+}
+
+.orderstatus{
+  font-size: 50px;
+  color: steelblue;
+  text-align: center;
+}
+
+.left,.kitchen,.delivery{
+  text-align: center;
+}
+.image{
+  /* display: flex; */
+  /* align-content: flex-end; */
+  /* vertical-align: bottom; */
+  margin-top: -350px;
+  border-color: black;
+  
+
+}
+
+  </style>
+  </head>
+  <body class="interface">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img src="/chef.png" alt="" class="chef">
+        <label class="logo">Foodie</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <!-- <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact</a></li> -->
+        <!-- <li><a href="#">Sign in</a></li> -->
+        <li><a href="/login.html">Login</a></li>
+        <li><a href="/register.html">Register</a></li>
+      </ul>
+      <div class="head">
+        <h1 class="online">Online</h1>
+        <h2 class="food">Food </h2>
+        <h2 class="ordering">Ordering</h2>
+        <h1 class="system">System</h1>
+        <p class="tagline">Giving your hunger a new option. Just sit back and satisfy <br> your hunger by selecting simple options.get your order at <br>your door step.</p>
+        <!-- <a href=""><button class="order"> Order Now</button></a> -->
+        <img src="/pic.png" alt="items" class="image">
+        <img src="/star.png" alt="rating" class="rating">
+        <img src="/star.png" alt="rating" class="star1">
+        <img src="/star.png" alt="rating" class="star2">
+        <img src="/star.png" alt="rating" class="star3">
+        <h2 class="rating1">4 Star Rating</h2>
+        <h4 class="based">Based on 100 Reviews</h4>
+          
+      </div>
+    </nav>
+    </body>
+</html>

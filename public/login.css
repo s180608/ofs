@@ -1,0 +1,103 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	background-image: url(1.jpg);
+}
+
+#login-form
+{
+    display: none;
+}
+.form-box
+{
+    width:380px;
+	height:380px;
+	position:relative;
+	margin:2% auto;
+	background:rgba(255, 255, 255, 0.3);
+	padding:10px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 10px 8px 35px #000000;
+    top: 100px;
+}
+
+.toggle-btn
+{
+	padding:10px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+    left: 120px;
+    top: 30px;
+}
+
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid rgb(17, 17, 17);
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 50%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #5d0097;
+	border: 0;
+	outline: none;
+	border-radius: 10px;
+	margin-top: 120px;
+	position: absolute;
+	margin-left: 70px;
+}
+
+.submit-btn:hover{
+    background-color: #cc00ff;
+}
+span
+{
+	color:#777;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:white;
+	font-size:15;
+}
+
+.dont{
+	position: fixed;
+	margin-top: 70px;
+	margin-left: 50px;
+	text-decoration: none;
+}
