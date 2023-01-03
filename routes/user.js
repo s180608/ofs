@@ -36,6 +36,7 @@ router.post('/login',async (req,res)=>{
     })
     try {
          if(data.password===req.body.password){
+            // res.sendFile(path.join(__dirname,'../public/home.html'))
             res.render('home')
         }
         else{
@@ -45,6 +46,25 @@ router.post('/login',async (req,res)=>{
         res.render('login_error',{message:error.message})
     }
 })
+
+router.get('/',async (req,res)=>{
+    res.render('home')
+})
+
+var items =[];
+
+router.get('/add-to-cart/:price/:name',async(req,res)=>{
+    const {price,name} = req.params
+    // itemsadded.item = name;
+    // itemsadded.value = price;
+    const obj = {
+        item:name,
+        value:price
+    }
+    items.push(obj);
+    res.render('cart',{message:items})
+})
+
 
 
 

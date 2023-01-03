@@ -10,6 +10,24 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="./style1.css">
+    <script>
+        let searchForm = document.querySelector('.search-form');
+ 
+        document.querySelector('#search-btn').onclick = () =>{
+            searchForm.classList.toggle('active');
+        }
+        
+        let shoppingCart= document.querySelector('.shopping-cart');
+        
+        document.querySelector('#cart-btn').onclick = () =>{
+            shoppingCart.classList.toggle('active');
+        }
+        let loginForm= document.querySelector('.login-form');
+        
+        document.querySelector('#login-btn').onclick = () =>{
+            loginForm.classList.toggle('active');
+        }
+    </script>
     <style>
          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap'); 
  
@@ -41,10 +59,10 @@
  }
  
  body{
-     background:#eee;
+     background:rgb(255, 255, 255);
  }
  
- section{
+ section{   
      padding:2rem 9%;
  }
  
@@ -82,7 +100,7 @@
      font-size: 1.7rem;
      border-radius: .5rem;
      border:.2rem solid var(--black);
-     color:var(--black);
+     color:var(--orange);
      cursor: pointer;
      background: none;
  
@@ -292,11 +310,12 @@
      display: flex;
      align-items: center;
      justify-content: right;
-     background:  url(/banner-bg.webp) no-repeat; 
+     background:  url(/background.jpg) no-repeat; 
      background-position: center;
      background-size: cover;
      padding-top: 10rem;
      padding-bottom: 10rem;
+
  }
  
  .home .content{
@@ -305,15 +324,15 @@
  }
  
  .home .content h3{
-     color:var(--black);
+     color:var(--orange);
      font-size: 3rem;
  }
  
  .home .content h3 span{
-     color:var(--black);
+     color:var(--orange);
  }
  .home .content p{
-     color:var(--black);
+     color:var(--orange);
      font-size: 1.7rem;
      padding:1rem 0;
      line-height: 1.8;
@@ -344,7 +363,7 @@
  
  .features .box-container .box img{
      margin:1rem 0;
-     height: 15rem;
+     height: 14rem;
  }
  
  .features .box-container .box h3{
@@ -369,8 +388,8 @@
  }
  
  .products .product-slider .box{
-     background: #fff;
-     border-radius: .5rem;
+     background: rgb(255, 255, 255);
+     border-radius: 10px;
      text-align: center;
      padding:3rem 2rem;
      outline-offset: -1rem;
@@ -420,13 +439,13 @@
         <a href="#home">home</a>
         <a href="#Restaurants">Restaurants</a>
         <a href="#Food Items">Food Items</a>
-         <a href="#review">review</a>
+         <!-- <a href="#review">review</a> -->
         
     </nav>
     <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
         <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+         <a href="/user/cart"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
         <div class="fas fa-user" id="login-btn"></div>
     </div>
 
@@ -505,65 +524,67 @@
     <div class="box-container">
 
         <div class="box">
-            <img src="/Reastaurant-1.jpg" alt="">
-            <h3>Chinese Food</h3>
-            <p>Sand wich,Biryani, Chinese, </p>
-            <p>Fast Food, Sichuan</p>
+            <img src="\mahesh.jpg" alt="">
+            <h3>Mahesh Gardens And Restaurants</h3>
+            <p>Starters,Biryani, Icecream, </p>
+            <p>Fast Food, Desserts</p>
            
               <p>Open now
-                5pm – 11pm (Today)
+                10AM – 11PM (Today)
                 </p>
             <a href="#" class="btn">Order now</a>
         </div>
 
         <div class="box">
-            <img src="/Restaurant-2.jpg" alt="">
-            <h3>Burger King</h3>
-            <p>Sand wich,Burger, Fast Food</p>
-            <p>Fast Food, Sichuan</p>
+            <img src="/dwaraka.jpg" alt="">
+            <h3>Dwaraka Restaurant</h3>
+            <p>Starters,Burger, Fast Food</p>
+            <p>Ice cream, Drinks</p>
            
               <p> Open now
-                5pm – 11pm (Today)
+                9AM – 11PM (Today)
                 </p>
             <a href="#" class="btn">Order Now</a>
         </div>
         <div class="box">
-            <img src="/Reastaurant-3.jpg" alt="">
-            <h3>Chicken</h3>
+            <img src="/imran.jpg" alt="">
+            <h3>Imran Gardens & Restaurant</h3>
             <p>Arabian, Rolls, Fast Food, Desserts</p><p>
-                 Beverages </p>
+                 Juices & Drinks </p>
             
            
               <p> Open now
-                5pm – 11pm (Today)
+                11AM – 11PM (Today)
                 
                 </p>
             <a href="#" class="btn">Order Now</a>
         </div>
 
         <div class="box">
-            <img src="/Restaurant-4.jpg" alt="">
-            <h3>Street Byte Biriyanis</h3>
+            <img src="/kapital.jpg" alt="">
+            <h3>Kapital Kitchen</h3>
             <p>Chicken Biryani,Chicken Dum Biryani</p><p>
                Chicken Wings Biryani</p>
             
            
               <p> Open now
-                5pm – 11pm (Today)
+                10AM – 11PM (Today)
                 
                 </p>
             <a href="#" class="btn">Order Now</a>
         </div>
 
         <div class="box">
-            <img src="/Restaurant-5.jpg" alt="">
-            <h3>Biryani Center</h3>
+            <img src="\vaibav.jpg" alt="">
+            <h3>Vaibav Restaurant</h3>
             <p>Chicken Biryani,Chicken Dum Biryani</p><p>
-               Chicken Wings Biryani</p>
+               Chicken Wings Biryani, 
+                Fried Biryani
+            </p>
             
            
               <p> Open now
-                5pm – 11pm (Today)
+                10AM – 11PM (Today)
                 
                 </p>
             <a href="#" class="btn">Order Now</a>
@@ -591,7 +612,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <a href="<%='/user/add-to-cart/350/Biryani'%>" class="btn">add to cart</a>
             </div>
 
 
@@ -609,7 +630,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <a href="#" class="btn">add to cart</a>
+                    <a href="<%='/user/add-to-cart/180/Pizza'%>" class="btn">add to cart</a>
                 </div>
 
                 <div class="swiper-wrapper">
@@ -625,7 +646,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <a href="#" class="btn">add to cart</a>
+                        <a href="<%='/user/add-to-cart/200/Shawarma'%>" class="btn">add to cart</a>
                     </div>
 
 
@@ -642,7 +663,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
-                            <a href="#" class="btn">add to cart</a>
+                            <a href="<%='/user/add-to-cart/150/Chicken'%>" class="btn">add to cart</a>
                         </div>
     
                         
@@ -660,7 +681,7 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star-half-alt"></i>
                                 </div>
-                                <a href="#" class="btn">add to cart</a>
+                                <a href="<%='/user/add-to-cart/60/Dosa'%>" class="btn">add to cart</a>
                             </div>
         
                             
@@ -678,7 +699,7 @@
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star-half-alt"></i>
                                     </div>
-                                    <a href="#" class="btn">add to cart</a>
+                                    <a href="<%='/user/add-to-cart/70/Noodles'%>" class="btn post-request">add to cart</a>
                                 </div>
             
                                 
@@ -696,7 +717,7 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star-half-alt"></i>
                                         </div>
-                                        <a href="#" class="btn">add to cart</a>
+                                        <a href="<%='/user/add-to-cart/180/Rolls'%>" class="btn">add to cart</a>
                                     </div>
                 
                                     
@@ -705,7 +726,7 @@
 
 
  <!-- custom js file link  -->
-<script src="script.js"></script>
+<script src="/views/script.js"></script>
 
 </body>
 </html>

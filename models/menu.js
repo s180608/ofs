@@ -1,9 +1,9 @@
 const mongoose = require('mongoose')
 const schema = mongoose.Schema({
-    image:{
-        type:String,
-        required:false
-    },
+    // image:{
+    //     type:String,
+    //     required:false
+    // },
     name:{
         type:String,
         required:true

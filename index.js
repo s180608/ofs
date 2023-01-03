@@ -27,8 +27,15 @@ app.get('/',(req,res)=>{
 
 app.post('/add',async(req,res)=>{
     const item = new menu({
-        image
+        name:req.body.name,
+        price:req.body.price
     })
+    try {
+        await item.save()
+        res.send("Success")
+    } catch (error) {
+        res.send(error.message)
+    }
 })
 
 app.listen(4000,console.log("4000"))
